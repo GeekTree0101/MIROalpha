@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div(class="bar bar-header bar-dark")
+      h1(class="title") Camera Monitoring
+  center
+      script(type="text/javascript").
+        var image = document.createElement('img')
+        image.src = '/video/image' + '?time=' + new Date().getTime();
+        image.style= "position : absolute; top: 20%; left: 10%;";
+        image.width = 860;
+        image.height = 600;
+        setInterval(function(){
+            changeImage();
+        }, 100);
+    
+        function changeImage(){
+            image.src = '/video/image' + '?time=' + new Date().getTime() ;
+            image.style= "position : absolute; top: 20%; left: 10%;";
+            image.width = 860;
+            image.height = 600;
+            document.body.appendChild(image);
+        }
+        

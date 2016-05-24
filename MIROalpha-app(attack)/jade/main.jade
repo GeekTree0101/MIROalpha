@@ -1,0 +1,38 @@
+ion-side-menus(enable-menu-with-back-views="true")
+    ion-nav-bar(class="bar-header bar-dark")
+             
+        ion-nav-buttons(side="right")
+            button(class="button button-icon button-clear ion-navicon" menu-toggle="right")
+    ion-side-menu-content(drag-content="false")
+        
+        
+        ion-nav-view(name="menuContent")
+               
+                    
+    ion-side-menu(side="right")
+        ion-header-bar(class="bar-header bar-dark")
+            h1(class="title") Setting
+        ion-content
+            ion-list
+                ion-item(menu-close ng-click="app.openDev()")
+                    i(class="icon ion-code") &nbsp&nbsp<b>Developer</b>   
+                ion-item(menu-close ng-click="app.connection()")
+                    i(class="icon ion-radio-waves") &nbsp <b>연결상태확인</b>
+                ion-item(menu-close ng-click="app.rtcam()")
+                    i(class="icon ion-videocamera") &nbsp <b>실시간카메라</b>       
+                div(class="list")                      
+                    div(class="item item-divider") 
+                        center Setting
+                    div(class="item item-input-inset")
+                        i(class="icon ion-radio-waves")
+                        button(class="button button-clear button-dark") IP
+                        label(class="item-input-wrapper")
+                            input(id="value0" type="text" placeholder="insert left" value="{{app.data[0]}}")                        
+                    div(class="item item-input-inset")
+                        i(class="icon ion-gear-b")
+                        button(class="button button-clear button-dark") 공격
+                        label(class="item-input-wrapper")
+                            input(id="value1" type="text" placeholder="insert left" value="{{app.data[1]}}")                                
+                    div(class="item item-input-inset")
+                        button(ng-click="app.setup()" class="button button-full button-dark") 확인
+                                   

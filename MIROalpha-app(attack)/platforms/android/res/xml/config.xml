@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ionicframework.bluetooth128189" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+    <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
+    <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
+    <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
+    <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
+    <splash density="land-ldpi" src="resources/android/splash/drawable-land-ldpi-screen.png" />
+    <splash density="land-mdpi" src="resources/android/splash/drawable-land-mdpi-screen.png" />
+    <splash density="land-hdpi" src="resources/android/splash/drawable-land-hdpi-screen.png" />
+    <splash density="land-xhdpi" src="resources/android/splash/drawable-land-xhdpi-screen.png" />
+    <splash density="port-ldpi" src="resources/android/splash/drawable-port-ldpi-screen.png" />
+    <splash density="port-mdpi" src="resources/android/splash/drawable-port-mdpi-screen.png" />
+    <splash density="port-hdpi" src="resources/android/splash/drawable-port-hdpi-screen.png" />
+    <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
+    <name>MIROa-ATK</name>
+    <description>
+        MIRO alpha Robot project : Robot Body controller
+    </description>
+    <author email="h2s1880@gmail.com" href="http://blog.naver.com/h2s1880/">
+      MIRO 
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="KeepRunning" value="True" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="FadeSplashScreenDuration" value="1000" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="Fullscreen" value="true" />
+</widget>

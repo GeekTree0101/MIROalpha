@@ -1,0 +1,21 @@
+/* Empty. Add your own CSS if you like */
+
+
+#catch{
+    position : fixed;
+    margin-top : 10%;
+    margin-left : 10%;
+    font-size : 1800%;
+}
+
+#joystick{
+    position : fixed;
+    margin-left : 50%;
+    
+}
+
+#control{
+    font-size :800%;
+    
+}
+

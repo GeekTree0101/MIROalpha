@@ -1,0 +1,10 @@
+{
+  "name": "MIRO_Robot",
+  "app_id": "415607c4",
+  "gulpStartupTasks": [
+    "jade",
+    "sass",
+    "tsc",
+    "watch"
+  ]
+}

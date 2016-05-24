@@ -1,0 +1,8 @@
+z#!/usr/bin/env python
+
+import subprocess
+from time import sleep
+
+print("MIROalpha ver 1.0.0")
+sleep(5)
+subprocess.call(["sudo","./run.sh"])

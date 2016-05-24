@@ -1,0 +1,7 @@
+from subprocess import Popen, PIPE, STDOUT
+import getpass
+
+password = getpass.getpass()
+proc = Popen(['sudo','apt-get','update'], stdout = PIPE, stdin = PIPE, stderr=STDOUT)
+
+proc.communicate(input = "{0}\n".format(password))[0]

@@ -1,0 +1,59 @@
+extends layout
+
+block content
+  script(src='/javascript/jquery-1.11.3.min.js')
+  script(src='/javascript/p5.min.js')
+  script(src='/javascript/p5.dom.js')
+  script(src='/javascript/socket.io.js')
+  script(src='/javascript/ionic.bundle.min.js')
+  script(src="/javascript/code.js")
+  
+  div(class="bar bar-header bar-dark" )
+
+    h1(class="title") <b>MIROalpha Core</b>
+    button(class="button icon ion-android-share-alt" onclick="app.state()") &nbsp연결상태확인 
+  br
+  br
+  div(class="button-bar")
+    a(class="button  button-outline button-dark" onclick="app.robotCodeCall()") 
+        i(class="icon ion-wrench") &nbsp <b>robotCode</b>
+    a(class="button button-outline  button-balanced" onclick="app.save()")
+        i(class="icon ion-loop") &nbsp <b>Code Save</b>        
+    a(class="button button-outline  button-assertive" onclick="app.upload()")
+        i(class="icon ion-code-download") &nbsp <b>Upload</b>
+    a(class="button button-outline  button-positive" onclick="app.camRun()")
+        i(class="icon ion-camera") &nbsp <b>Cam ON</b>
+    a(class="button button-outline  button-balanced" onclick="app.openCVRun()")
+        i(class="icon ion-eye") &nbsp <b>CV ON</b>            
+  div(class="button-bar")
+    a(class="button button-outline  button-positive" onclick="app.usb()")
+        i(class="icon ion-network") &nbsp <b>USB LIST</b>
+    a(class="button button-outline  button-balanced" onclick="app.usbConnect()")
+        i(class="icon ion-network") &nbsp <b>USB connect</b> 
+    a(class="button button-outline  button-assertive" onclick = "app.usbDisconnect()")
+        i(class="icon ion-close-round") &nbsp <b>USB disconnect </b>               
+    a(class="button button-outline  button-assertive" onclick="app.camStop()")
+        i(class="icon ion-pause") &nbsp <b>Cam OFF</b>                  
+    a(class="button button-outline  button-assertive" onclick="app.openCVStop()")
+        i(class="icon ion-eye-disabled") &nbsp <b>CV OFF</b> 
+  div(class="bar bar-header item-input-inset" style="padding-top:10px")
+    label(class="item-input-wrapper")
+        i(class="icon ion-code placeholder-icon")
+        input(id="cmd" type="search" placeholder="Welcome Commander!"  onkeydown="JavaScript:miroAlphaCore.cmdEnterPressed()")
+    button(class="button button-clear" onclick ="miroAlphaCore.cmd()") Cmd       
+
+  div(id="communi")
+    ul(id="list")
+        li MIROalpha >> "Hello Commander! I'm MIROalpha"
+        li MIROalpha >> "If you wanna clear cmdlist tell me [clear]!"
+        li MIROalpha >> "If you forget [command] call me [help]!"
+        li MIROalpha >> "Let's Enjoy!"
+
+  form(action="#" accept-charset="utf-8" method="get" )
+    fieldset
+       textarea(id="code" name="code" cols="200" rows="10"  )      
+   
+  footer
+    br
+    br
+    center <b>Copyright(C)2016 MIRO</b>

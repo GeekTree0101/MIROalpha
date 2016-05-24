@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  script(src='/javascript/jquery-1.11.3.min.js')
+  script(src='/javascript/p5.min.js')
+  script(src='/javascript/p5.dom.js')
+  script(src='/javascript/socket.io.js')
+  script(src='/javascript/ionic.bundle.min.js')
+  script(src="/javascript/test.js")
+
+  div(class="bar bar-deader bar-positive item-toggle")
+ 
+    h1(class="title") TEST
+    button(class="button icon ion-android-share-alt") &nbsp연결상태확인 
+  br
+  br
+  button(class="button button-positive" onclick="app()") TESTBUTTON

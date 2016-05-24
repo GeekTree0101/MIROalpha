@@ -1,0 +1,32 @@
+ion-view(view-title="<i class='icon ion-android-locate'/>&nbsp<b> MIRO alphaBot</b>")
+  
+
+    ion-content
+        div(class="item range" on-touch="act.power()")
+            i(class="icon ion-ios-bolt-outline")
+            input(id="power"  type="range" min="10" max="200" value="110")
+            i(class="icon ion-ios-bolt")
+        div(id="catch" class="button button-icon ion-android-hand" on-touch="act.onTouch('catch')" on-release="act.onRelease()")
+        
+        div(id="joystick")
+                div(class="row row-top")
+                    div(class="col") 
+                        button(id="control" class="button button-full button-clear") <b style="color:#fff">""</b>
+                    div(class="col") 
+                        button(id="control" class="button button-full button-icon ion-chevron-up" on-touch="act.onTouch('forward')" on-release="act.onRelease()" )
+                    div(class="col")
+                        button(id="control" class="button button-full button-clear") <b style="color:#fff">""</b>
+                div(class="row row-center")
+                    div(class="col") 
+                        button(id="control"  class="button button-full button-icon ion-chevron-left" on-touch="act.onTouch('left')" on-release="act.onRelease()" )
+                    div(class="col") 
+                        button(id="control" class="button button-full button-icon ion-android-radio-button-on" on-touch="act.onTouch('break')" on-release="act.onRelease()")
+                    div(class="col")
+                        button(id="control"  class="button button-full button-icon ion-chevron-right" on-touch="act.onTouch('right')" on-release="act.onRelease()" )                 
+                div(class="row row-bottom")
+                    div(class="col") 
+                        button( class="button button-full button-clear") 
+                    div(class="col") 
+                        button(id="control"  class="button button-full button-icon ion-chevron-down" on-touch="act.onTouch('back')" on-release="act.onRelease()")
+                    div(class="col")
+                        button( class="button button-full button-clear")                

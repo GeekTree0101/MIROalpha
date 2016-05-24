@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="IoTcontrol", method="get")
+    button(type="submit" formmethod="get" formaction="IoTcontrol") GET
+  form( action="IoTcontrol" method="post")
+    input(type="text" name="jsonsentence")
+    button(type="submit" formmethod="post" formaction="IoTcontrol") post
+        
